@@ -1,0 +1,85 @@
+body {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #222;
+    
+    background-image: url(https://images.unsplash.com/photo-1490604001847-b712b0c2f967?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1853&q=80)
+}
+
+.box {
+    background: rgba(3, 3, 3, 0.7);
+    color:white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 400px;
+    margin: 1em;
+}
+.search{
+    display: flex;
+    justify-content:center;
+    align-content:center;
+}
+.search-bar{
+    margin: 0.3em;
+    border:none;
+    outline:none;
+    height: 1.5em;
+    width:70%;
+    padding:0.5em 1em;
+    border-radius:24px;
+    background:rgb(194, 189, 189);
+    color:white;
+    font-family: Roboto,Arial;
+    font-size:105%;
+    
+
+}
+  button {
+      margin-top: 0.5em;
+      border-radius: 50%;
+      border: none;
+      height: 40px;
+      width: 40px;
+      outline: none;
+      background: rgb(194, 189, 189);
+      color: white;
+      transition: 0.2s ease-in-out;
+  }
+  
+  button:hover {
+      background: #333232;
+      cursor: pointer;
+  }
+  h1 .temp{
+    margin:0;
+    margin-bottom: 0.5em;
+}
+.description{
+    text-transform:capitalize;
+    margin-left:8px ;
+}
+.flex{
+    display:flex;
+    align-items:center;
+    
+}
+.weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+  }
+  
+  .weather.loading:after {
+    visibility: visible;
+    content:"Enter any city name...";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 20px;
+  }
