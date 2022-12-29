@@ -5,7 +5,10 @@ let weather = {
       `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&APPID=${this.apiKey}`
     )
       .then((response) => response.json())
-      .then((json) => this.displayWeather(json));
+      .then((json) => this.displayWeather(json))
+      .catch((error) => {
+        console.log("error");
+      });
   },
   displayWeather: function (json) {
     const { name } = json;
